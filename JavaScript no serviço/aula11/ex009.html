@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descobrir país</title>
+</head>
+<body>
+    <h1>Sistema de país</h1>
+    De qual país você é? <input type="name" name="tst" id="tst">
+    <input type="button" value="checar" onclick="consultar()">
+    <div id="msg"></div>
+    <div id="res"></div>
+
+    <script>
+        let n = window.prompt("Qual Seu nome?")
+      function consultar(){
+            var tst = window.document.getElementById('tst')
+            var res = window.document.querySelector("div#res")
+            if (Brasil == pais) {
+                res.innerHTML += `<p>Você é <strong>BRASILEIRO!</strong></p>`
+            }
+            res.innerHTML += `<p>Você é sempre bem-vindo!</p>`
+        }
+    </script>
+</body>
+</html>
+
+<!------ não copiar mas usar de exemplo.
+Fiz igual, porém usando o css e o prompt deu um charme maior . Melhor curso free .
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nacionalidade!</title>
+</head>
+   <style> 
+           body{
+          
+          background: gray;
+          font: normal 20px verdana;
+          color: black;
+         }
+           h1{
+               font: normal 28pt verdana;
+           color: red;
+           }
+    
+           p{
+               font: normal 25pt Arial;
+           color:rgb(221, 219, 230);
+           background:rgb(36, 41, 36);
+           width: 600px;
+           height: 40px;
+           }
+
+           input{
+               background: wheat;
+               color:rgb(36, 41, 36);
+               font: normal 15pt arial;
+               width: 120px;
+           }
+           div#msg {
+            color: red;
+           }
+           
+         
+
+   </style>
+
+      <h1>Nacionalidade</h1>
+      Qual seu pais de origem ?: <input type="name" name="txtn1" id="txtn1">
+      <input type="button" value="checar" onclick="consultar()">
+      <div id="msg"></div>
+      <div id="Resultado"></div>
+
+  <script>
+             let n = window.prompt('Qual Seu nome ?')
+  function consultar(){
+             let Brasil = 'Brasil'
+             let txtbr = window.document.getElementById('txtn1')
+             let msg = document.getElementById('msg')
+             let pais = (txtbr.value)
+             msg.innerHTML = ` <p>Você tem nacionalidade da(o) : <strong>${pais}</strong></p>`
+
+          if(Brasil == pais){
+           msg.innerHTML += ` ${n} : Você é Brasileiro, seja bem vindo!! `
+          } else {
+            msg.innerHTML += `${n} seus País é : ${pais}, você é ESTRANGEIRO!!`
+          }   
+
+  }
+
+  </script>
+
+<body>
+    
+</body>
+</html>
+
+--->
